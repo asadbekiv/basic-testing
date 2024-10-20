@@ -45,7 +45,6 @@ describe('throttledGetDataFromApi', () => {
     };
 
     const responseData = await throttledGetDataFromApi(end);
-
     expect(responseData).toEqual(expect.objectContaining(expectResponseData));
   });
 });
