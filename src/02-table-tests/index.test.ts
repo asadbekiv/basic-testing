@@ -14,12 +14,10 @@ const testCases = [
 ];
 
 describe('simpleCalculator', () => {
-  // This test case is just to run this test suite, remove it when you write your own tests
   test.each(testCases)(
     'should perform action with a, b',
     ({ a, b, action, expected }) => {
       expect(simpleCalculator({ a, b, action })).toBe(expected);
     },
   );
-  // Consider to use Jest table tests API to test all cases above
 });
